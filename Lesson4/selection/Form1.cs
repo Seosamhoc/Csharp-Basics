@@ -105,13 +105,31 @@ namespace selection
             //        MessageBox.Show(i++ + " " + nickname);
             //    }
             //}
-            string[] myArray = { "Seo", "Seos", "Shozy", "Joe" };
-            //combine for with if on array
-            for (int i = 0; i < myArray.Length; i++)
+            //string[] myArray = { "Seo", "Seos", "Shozy", "Joe" };
+            ////combine for with if on array
+            //for (int i = 0; i < myArray.Length; i++)
+            //{
+            //    if (myArray[i] == "Shozy")
+            //    {
+            //        MessageBox.Show("Found Shozy");
+            //    }
+            //}
+            for (int i=0; i <listBox1.SelectedItems.Count; i++)
             {
-                if (myArray[i] == "Shozy")
+                switch (listBox1.SelectedItems[i].ToString())
                 {
-                    MessageBox.Show("Found Shozy");
+                    case "Foobar":
+                        MessageBox.Show("Foobar");
+                        break;
+                    case "Bazquirk":
+                        MessageBox.Show("Bazquirk");
+                        break;
+                    case "Widgets":
+                        MessageBox.Show("Widgets");
+                        break;
+                    case "Gadgets":
+                        MessageBox.Show("Gadgets");
+                        break;
                 }
             }
         }
