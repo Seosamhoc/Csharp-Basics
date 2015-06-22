@@ -51,8 +51,8 @@ namespace selection
             {
                 MessageBox.Show("You picked shozy");
             }
-            */
-            // 4. switch statement
+            
+             4. switch statement
             switch(listBox1.SelectedItem.ToString())
             {
                 case "Foobar":
@@ -67,6 +67,13 @@ namespace selection
                     MessageBox.Show("You picked something else.");
                     break;
             }
+             arrays*/
+            //1. sized array, set the size
+            string[] myArray = new string[2];
+            myArray[0] = "Seo";
+            myArray[1] = "Seos";
+            myArray[2] = "Shozy"; //causes an out of bounds exception
+            MessageBox.Show(myArray[1]);
         }
     }
 }
