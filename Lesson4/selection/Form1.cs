@@ -67,13 +67,21 @@ namespace selection
                     MessageBox.Show("You picked something else.");
                     break;
             }
-             arrays*/
-            //1. sized array, set the size
+             arrays
+            5. sized array, set the size
             string[] myArray = new string[2];
             myArray[0] = "Seo";
             myArray[1] = "Seos";
             myArray[2] = "Shozy"; //causes an out of bounds exception
             MessageBox.Show(myArray[1]);
+            */
+            //6. intialized array [0] = Seo, [1] = Seos, [2] = Shozy, [3] = Joe
+            string[] myArray = { "Seo", "Seos", "Shozy", "Joe" };
+            //MessageBox.Show(myArray[1]);
+            foreach(var nickname in myArray)
+            {
+                MessageBox.Show(nickname);
+            }
         }
     }
 }
