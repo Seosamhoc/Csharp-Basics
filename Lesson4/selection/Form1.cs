@@ -33,8 +33,8 @@ namespace selection
             2. One line of code to be excuted doesn't need curly braces
             if (comboBox1.Text == "Seos")
                 MessageBox.Show("You picked Seos");
-            */
-            //3. nested 'if statement
+            
+            3. nested 'if statement
             if (comboBox1.Text != "Shozy")
             {
                 if (comboBox1.Text == "Seo")
@@ -50,6 +50,22 @@ namespace selection
             else
             {
                 MessageBox.Show("You picked shozy");
+            }
+            */
+            // 4. switch statement
+            switch(listBox1.SelectedItem.ToString())
+            {
+                case "Foobar":
+                    MessageBox.Show("You picked Foobar");
+                    break;
+
+                case "Bazquirk":
+                    MessageBox.Show("You picked Bazquirk");
+                    break;
+
+                default:
+                    MessageBox.Show("You picked something else.");
+                    break;
             }
         }
     }
