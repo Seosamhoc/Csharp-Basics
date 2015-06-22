@@ -76,16 +76,34 @@ namespace selection
             MessageBox.Show(myArray[1]);
             */
             //6. intialized array [0] = Seo, [1] = Seos, [2] = Shozy, [3] = Joe
-            string[] myArray = { "Seo", "Seos", "Shozy", "Joe" };
+            //string[] myArray = { "Seo", "Seos", "Shozy", "Joe" };
             //MessageBox.Show(myArray[1]);
             //foreach - shows all the names
             //foreach (var nickname in myArray)
             //{
             //    MessageBox.Show(nickname);
             //}
-            for(int i=0; i < myArray.Length; i++)
+            //for(int i=0; i < myArray.Length; i++)
+            //{
+            //    MessageBox.Show(i.ToString());
+            //}
+            //int i = 0;
+            //while (i < int.Parse(textBox1.Text))
+            //{
+            //    i++;
+            //}
+            //MessageBox.Show("The final value was: " + i.ToString());
+            //6. intialized array [0] = Seo, [1] = Seos, [2] = Shozy, [3] = Joe
+            string[] myArray = { "Seo", "Seos", "Shozy", "Joe" };
+
+            // for and foreach loop
+            for (int i=0; i <myArray.Length;)
             {
-                MessageBox.Show(i.ToString());
+                //temp value nickname
+                foreach (var nickname in myArray)
+                {
+                    MessageBox.Show(i++ + " " + nickname);
+                }
             }
         }
     }
