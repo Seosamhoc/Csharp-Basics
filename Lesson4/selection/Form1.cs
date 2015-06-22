@@ -30,6 +30,10 @@ namespace selection
                 MessageBox.Show("You picked Seo");
                 comboBox1.Text = "";
             }
+            //2. One line of code to be excuted doesn't need curly braces
+            if (comboBox1.Text == "Seos")
+                MessageBox.Show("You picked Seos");
+
         }
     }
 }
