@@ -78,9 +78,14 @@ namespace selection
             //6. intialized array [0] = Seo, [1] = Seos, [2] = Shozy, [3] = Joe
             string[] myArray = { "Seo", "Seos", "Shozy", "Joe" };
             //MessageBox.Show(myArray[1]);
-            foreach(var nickname in myArray)
+            //foreach - shows all the names
+            //foreach (var nickname in myArray)
+            //{
+            //    MessageBox.Show(nickname);
+            //}
+            for(int i=0; i < myArray.Length; i++)
             {
-                MessageBox.Show(nickname);
+                MessageBox.Show(i.ToString());
             }
         }
     }
