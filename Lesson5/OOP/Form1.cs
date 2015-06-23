@@ -21,5 +21,10 @@ namespace OOP
         {
             Vehicle myCar = new Vehicle();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Vehicle myCar2 = new Vehicle("BMW", "320i", 70000);
+        }
     }
 }
