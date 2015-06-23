@@ -21,12 +21,29 @@ namespace OOP
 
             System.Windows.Forms.MessageBox.Show("Called Constructor");
         }
+
         public Vehicle(string make, string model, int elapsedMilage)
         {
             _make = make;
             _model = model;
             _elapsedMilage = elapsedMilage;
-            System.Windows.Forms.MessageBox.Show("Make: " + _make + " Model: " + _model + " Milage: " + _elapsedMilage);
+            System.Windows.Forms.MessageBox.Show("Make: " + _make + "\nModel: " + _model + "\nMilage: " + _elapsedMilage);
+        }
+
+        public string Make
+        {
+            get { return _make; }
+            set { _make = value; }
+        }
+        public string Model
+        {
+            get { return _model; }
+            set { _model = value; }
+        }
+        public int ElapsedMilage
+        {
+            get { return _elapsedMilage; }
+            set { _elapsedMilage = value; }
         }
     }
 }
