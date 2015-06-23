@@ -45,5 +45,18 @@ namespace OOP
             get { return _elapsedMilage; }
             set { _elapsedMilage = value; }
         }
+        public string Drive(int kilometers)
+        {
+            _elapsedMilage += kilometers;
+
+            // could preform some additional calculations here
+            // for determining fuel consumption and wear and tear
+            // costs
+
+            string result;
+            result = "The " + Make + " " + _model + " now has " + _elapsedMilage + " kilometers.";
+            return result;
+
+        }
     }
 }
