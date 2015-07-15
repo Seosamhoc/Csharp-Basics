@@ -22,8 +22,8 @@ namespace CourseBooking
             this.Appearance = System.Windows.Forms.Appearance.Button;
             //We always want the button size to be 30 x 30 but autosize takes 
             //over unless min and max are set
-            this.MaximumSize = new System.Drawing.Size(30, 30);
-            this.MinimumSize = new System.Drawing.Size(30, 30);
+            //this.MaximumSize = new System.Drawing.Size(30, 30);
+            //this.MinimumSize = new System.Drawing.Size(30, 30);
             this.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CheckedChanged += new System.EventHandler(this.CheckChanged);
         }
