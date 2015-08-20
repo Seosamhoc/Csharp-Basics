@@ -1,0 +1,2 @@
+﻿--List the last name of all employees in departments 50 and 90 together with their monthly salaries (rounded to 2 decimal places), sorted in ascending order of last name.
+SELECT Last_Name, CAST(ROUND(Annual_Salary/12,2) AS DECIMAL(10,2)) AS 'Monthly Salary' FROM Employees WHERE Department_No = 50 OR Department_No =90 ORDER BY Last_Name ASC

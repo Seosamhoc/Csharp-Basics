@@ -1,0 +1,2 @@
+﻿ --List the last name, first name and employee number of all programmers who were hired on or before 21 May 1991 in ascending order of last name.
+ SELECT Last_Name, First_Name, Employee_No FROM Employees WHERE Job_ID = (SELECT Job_ID FROM Jobs WHERE Job_Title = 'programmer') AND Hire_Date <= '1991/05/21' ORDER BY Last_Name ASC

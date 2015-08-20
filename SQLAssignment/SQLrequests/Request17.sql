@@ -1,0 +1,2 @@
+﻿--Create a new view for manager's details only using all the fields from the employee table. Apply a CHECK constraint.
+CREATE VIEW Managers AS SELECT * FROM Employees WHERE Job_ID LIKE '%MGR' WITH CHECK OPTION

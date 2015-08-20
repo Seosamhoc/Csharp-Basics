@@ -1,0 +1,2 @@
+﻿--List the last name, first name, job id and commission of employees who earn commission sorted in ascending order of first name within last name.
+SELECT Last_Name, First_Name, Job_ID, Commission_Percent FROM Employees WHERE Commission_Percent IS NOT NULL ORDER BY Last_Name, First_Name

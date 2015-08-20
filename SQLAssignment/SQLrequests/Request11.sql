@@ -1,0 +1,2 @@
+﻿--List the department number and name for all departments where no programmers work.
+SELECT Department_No, Department_Name FROM Departments WHERE Department_No NOT IN (SELECT Department_No FROM Employees WHERE Job_ID = (SELECT Job_ID FROM Jobs WHERE Job_Title = 'programmer'))

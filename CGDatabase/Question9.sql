@@ -1,0 +1,2 @@
+﻿--Show the total number of employees in the Financial Department
+SELECT COUNT(Employee_No) AS 'Number of Finance Dept Employees' FROM Employees WHERE Department_No = (SELECT Department_No FROM Departments WHERE Department_Name = 'Finance')

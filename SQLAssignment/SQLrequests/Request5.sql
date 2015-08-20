@@ -1,0 +1,2 @@
+﻿--Which jobs are found in the IT and Sales departments?
+SELECT DISTINCT Job_Title FROM Jobs WHERE Job_ID IN (SELECT Job_ID FROM Employees WHERE Department_No IN (SELECT Department_No FROM Departments WHERE Department_Name IN ('IT', 'Sales')))
